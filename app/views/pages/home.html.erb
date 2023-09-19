@@ -4,8 +4,8 @@
     <p class="mx-3 text-white">Über Mich</p>
     <p class="mx-3 text-white"> Kontakt</p>
   </div>
-  <div class="d-flex half-header container justify-content-between px-5">
-    <div class=" mt-5">
+  <div class="d-md-flex half-header container justify-content-between">
+    <div class="intro mt-5">
       <h1 class="mb-5">Hi,<br> ich bin Isabel Dockemeyer.</h1>
       <button class="pink">Meine Projekte</button>
     </div>
@@ -14,15 +14,43 @@
     </div>
   </div>
 </div>
+
   <div class="inner">
     <div class="icon">
     </div>
   </div>
-<h2 class="mt-5 text-center text-black">Meine Projekte</h2>
-<div class="d-flex justify-content-around">
-  <div class="white-card">
-    <p>Hello</p>
-  </div>
-  <div class="white-card">
-  </div>
+
+<div class="container mt-5">
+  <h2 class="mb-4 text-center text-black">Meine Projekte</h2>
+    <div class="d-md-flex justify-content-center">
+        <div class="white-card ">
+          <%= image_tag ("houselist.png"), class: "img-logo"%>
+          <%= image_tag ("houselist-preview.png"), class: "img-big"%>
+          <button class="pink-small">Zum Projekt</button>
+        </div>
+
+        <div class="white-card ">
+          <%= image_tag ("krenty.png"), class: "img-logo-small"%>
+          <%= image_tag ("houselist-preview.png"), class: "img-big"%>
+          <button class="pink-small">Zum Projekt</button>
+        </div>
+    </div>
+
+    <div class="card-gradient spacing">
+      <h2 class="my-5 text-center">Über mich</h2>
+      <p class="mx-5 text-center text-white">Junior Frontend Entwicklerin mit einem Hintergrund im Bereich Medien und Eventmanagement.
+        Vor kurzem habe ich ein intensives 9-wöchiges Bootcamp bei Le Wagon absolviert,
+        in dem ich erfolgreich zwei Projekte umgesetzt habe
+        - eine Webapp und eine Progressive Web App (PWA).
+        Mit meinem kundenorientierten Bewusstsein und meiner Leidenschaft für die Entwicklung
+        von benutzerfreundlichen Frontend-Lösungen freue ich mich darauf,
+        Mehrwert in Ihr Unternehmen zu bringen und gemeinsam an spannenden Projekten zu arbeiten.</p>
+      <%= image_tag ("sprachen.png"), class: "image-long my-5"%>
+    </div>
+    <h2 class="mb-4 text-center text-black spacing">Let's code together!</h2>
+    <p class="text-center text-pink">Kontaktiere mich!</p>
+    <div class="d-flex justify-content-center">
+      <%= image_tag ("github.png"), class: "icon-contact"%>
+      <%= image_tag ("linkedin.png"), class: "icon-contact"%>
+    </div>
 </div>

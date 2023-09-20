@@ -1,12 +1,11 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.gradient-navbar{
+  background-image: linear-gradient(90deg, rgba(114,9,183,0.9) 0%, rgba(67,97,238,0.9) 100%);
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.icon-isabel{
+  height: 71px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar{
+  height: 87px;
 }

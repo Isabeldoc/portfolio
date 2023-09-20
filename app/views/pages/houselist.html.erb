@@ -1,0 +1,23 @@
+<div class="gradient-navbar">
+  <div class="d-flex justify-content-between pt-3 navbar px-5">
+    <%= image_tag ("isabel-klein.png"), class:'icon-isabel'%>
+    <div class="justify-content-end">
+      <%= link_to 'Projekte', root_path, class: 'mx-3 text-white no-decoration'%>
+      <a rel="noopener" href="#aboutme" class="mx-3 text-white no-decoration">Über mich</a>
+      <a rel="noopener" href="#contact" class="mx-3 text-white no-decoration">Kontakt</a>
+    </div>
+  </div>
+</div>
+<div class="container mt-5 spacing">
+  <div class="d-md-flex">
+    <div>
+      <%= image_tag ("houselist.png"), class: "img-logo mb-3"%>
+      <h2 class="text-black header mb-1">Your apartments in one place.</h2>
+      <p class="mb-3">houselist ist eine PWA für Vermieter, die möbilierte Apartments vermieten.
+        Um den Überblick über die beinhalteten Gegenstände
+        zu behalten bietet houselist die perfekte Lösung</p>
+      <%= link_to 'Code auf Github', "https://github.com/Isabeldoc/houselist", class: 'pink-small mt-3' %>
+    </div>
+    <%= image_tag ("houselist-preview.png"), class:"img-half"%>
+  </div>
+</div>

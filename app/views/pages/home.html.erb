@@ -1,12 +1,13 @@
 <div class="picture-gradient ">
   <div class="d-flex justify-content-end pt-3 menu px-5">
-    <p class="mx-3 text-white">Projekte</p>
-    <p class="mx-3 text-white">Über Mich</p>
-    <p class="mx-3 text-white"> Kontakt</p>
+    <a rel="noopener" href="#projects" class="mx-3 text-white no-decoration">Projekte</a>
+    <a rel="noopener" href="#aboutme" class="mx-3 text-white no-decoration">Über mich</a>
+    <a rel="noopener" href="#contact" class="mx-3 text-white no-decoration">Kontakt</a>
   </div>
   <div class="d-md-flex half-header container justify-content-between">
     <div class="intro mt-5">
-      <h1 class="mb-5">Hi,<br> ich bin Isabel Dockemeyer.</h1>
+      <h1 class="">Hi,<br> ich bin Isabel Dockemeyer.</h1>
+      <p class="text-hidden text-white mb-3">Frontend Developer</p>
       <button class="pink">Meine Projekte</button>
     </div>
     <div class="picture-transparent align-self-end">
@@ -20,24 +21,24 @@
     </div>
   </div>
 
-<div class="container mt-5">
-  <h2 class="mb-4 text-center text-black">Meine Projekte</h2>
-    <div class="d-md-flex justify-content-center">
+<div class="container mt-5 spacing">
+  <h2 class="mb-4 text-center text-black" id="projects">Meine Projekte</h2>
+    <div class="d-sm-flex justify-content-around">
         <div class="white-card ">
           <%= image_tag ("houselist.png"), class: "img-logo"%>
           <%= image_tag ("houselist-preview.png"), class: "img-big"%>
-          <button class="pink-small">Zum Projekt</button>
+          <%= link_to 'Zum Projekt', houselist_path, class: 'pink-small'%>
         </div>
 
         <div class="white-card ">
           <%= image_tag ("krenty.png"), class: "img-logo-small"%>
           <%= image_tag ("houselist-preview.png"), class: "img-big"%>
-          <button class="pink-small">Zum Projekt</button>
+          <%= link_to 'Zum Projekt', krenty_path, class: 'pink-small'%>
         </div>
     </div>
 
     <div class="card-gradient spacing">
-      <h2 class="my-5 text-center">Über mich</h2>
+      <h2 class="my-5 text-center" id="aboutme">Über mich</h2>
       <p class="mx-5 text-center text-white">Junior Frontend Entwicklerin mit einem Hintergrund im Bereich Medien und Eventmanagement.
         Vor kurzem habe ich ein intensives 9-wöchiges Bootcamp bei Le Wagon absolviert,
         in dem ich erfolgreich zwei Projekte umgesetzt habe
@@ -47,10 +48,14 @@
         Mehrwert in Ihr Unternehmen zu bringen und gemeinsam an spannenden Projekten zu arbeiten.</p>
       <%= image_tag ("sprachen.png"), class: "image-long my-5"%>
     </div>
-    <h2 class="mb-4 text-center text-black spacing">Let's code together!</h2>
+    <h2 class="mb-4 text-center text-black spacing" id="contact">Let's code together!</h2>
     <p class="text-center text-pink">Kontaktiere mich!</p>
     <div class="d-flex justify-content-center">
-      <%= image_tag ("github.png"), class: "icon-contact"%>
-      <%= image_tag ("linkedin.png"), class: "icon-contact"%>
+      <a href="https://github.com/Isabeldoc">
+        <%= image_tag ("github.png"), class: "icon-contact"%>
+      </a>
+      <a href="https://www.linkedin.com/in/isabel-dockemeyer-385530195/">
+        <%= image_tag ("linkedin.png"), class: "icon-contact"%>
+      </a>
     </div>
 </div>

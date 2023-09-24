@@ -1,7 +1,98 @@
+
+
+.header {
+  font-weight: 700;
+  font-size: 38px;
+  padding-bottom: 15px;
+}
+
+.header-padding {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 .img-half{
   width: 540px;
 }
 
-.header {
-  font-weight: 700;
+.image-slider{
+  height: 420px;
+  margin-right: -110px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .image-slider{
+    height: 400px;
+    margin-right: -100px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .image-slider{
+    height: 340px;
+    margin-right: -80px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .image-slider{
+    height: 280px;
+    margin-right: -80px;
+  }
+  .pink-round{
+    height: 44px;
+    width: 44px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .image-slider{
+    height: 220px;
+    margin-right: -60px;
+  }
+  .img-half{
+    width: 400px;
+  }
+  .pink-round{
+    height: 44px;
+    width: 44px;
+  }
+}
+
+.more-padding{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+
+
+.one-slider{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph-space{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.p-big {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
 }

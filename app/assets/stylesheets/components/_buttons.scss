@@ -1,3 +1,7 @@
+.disabled {
+  pointer-events: none;
+}
+
 .pink{
   border-radius: 150px;
   color: white;
@@ -21,4 +25,15 @@
   text-decoration: none;
   text-align: center;
   padding: 7px;
+}
+
+.pink-round{
+  border-radius: 150px;
+  color: white;
+  background-color: $pink;
+  border: none;
+  height: 55px;
+  width: 55px;
+  font-weight: 600;
+  font-size: 20px;
 }

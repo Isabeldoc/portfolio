@@ -3,21 +3,114 @@
     <%= image_tag ("isabel-klein.png"), class:'icon-isabel'%>
     <div class="justify-content-end">
       <%= link_to 'Projekte', root_path, class: 'mx-3 text-white no-decoration'%>
-      <a rel="noopener" href="#aboutme" class="mx-3 text-white no-decoration">Über mich</a>
-      <a rel="noopener" href="#contact" class="mx-3 text-white no-decoration">Kontakt</a>
+      <a rel="noopener" href="#contact-2" class="mx-3 text-white no-decoration">Kontakt</a>
     </div>
   </div>
 </div>
 <div class="container mt-5 spacing">
-  <div class="d-md-flex">
+  <div class="d-md-flex header-padding">
     <div>
       <%= image_tag ("houselist.png"), class: "img-logo mb-3"%>
       <h2 class="text-black header mb-1">Your apartments in one place.</h2>
-      <p class="mb-3">houselist ist eine PWA für Vermieter, die möbilierte Apartments vermieten.
+      <p class="mb-3 p-big">houselist ist eine PWA für Vermieter, die möbilierte Apartments vermieten.
         Um den Überblick über die beinhalteten Gegenstände
         zu behalten bietet houselist die perfekte Lösung</p>
-      <%= link_to 'Code auf Github', "https://github.com/Isabeldoc/houselist", class: 'pink-small mt-3' %>
+      <%= link_to 'Code auf Github', "https://github.com/Isabeldoc/houselist", class: 'pink-small more-padding' %>
     </div>
     <%= image_tag ("houselist-preview.png"), class:"img-half"%>
   </div>
+  <h2 class="mb-4 text-center text-black spacing">User Flow</h2>
 </div>
+    <div data-controller="slider" >
+      <div class=" d-flex justify-content-center">
+        <div class="one-slider">
+          <%= image_tag ("1.png"), class:"image-slider",
+                :data => {
+                slider_target: "img1",
+                action: "click->slider#resetImg"} %>
+          <button class="pink-round pulse" data-action="click->slider#enlargeImg" data-slider-target="button1">1</button>
+        </div>
+        <div class="one-slider">
+          <%= image_tag ("2.png"), class:"image-slider",
+                :data => {
+                slider_target: "img2",
+                action: "click->slider#resetImg2"} %>
+          <button class="pink-round" data-action="click->slider#enlargeImg2" data-slider-target="button2">2</button>
+        </div>
+        <div class="one-slider">
+          <%= image_tag ("3.png"), class:"image-slider",
+                :data => {
+                slider_target: "img3",
+                action: "click->slider#resetImg3"} %>
+          <button class="pink-round" data-action="click->slider#enlargeImg3" data-slider-target="button3">3</button>
+        </div>
+        <div class="one-slider">
+          <%= image_tag ("4.png"), class:"image-slider",
+                :data => {
+                slider_target: "img4",
+                action: "click->slider#resetImg4"} %>
+          <button class="pink-round" data-action="click->slider#enlargeImg4" data-slider-target="button4">4</button>
+        </div>
+        <div class="one-slider">
+          <%= image_tag ("5.png"), class:"image-slider",
+                :data => {
+                slider_target: "img5",
+                action: "click->slider#resetImg5"} %>
+          <button class="pink-round" data-action="click->slider#enlargeImg5" data-slider-target="button5">5</button>
+        </div>
+      </div>
+        <div class="spacing d-none" data-slider-target="text1">
+          <h3 class="text-black text-center">Schritt 1: Login</h3>
+          <p class="text-center paragraph-space">Benutzer können sich als Landlord oder Tenant anmelden.</p>
+        </div>
+        <div class="spacing d-none" data-slider-target="text2">
+          <h3 class="text-black text-center">Schritt 2: Wohnungsübersicht</h3>
+          <p class="text-center paragraph-space">Landlords werden nach dem Login begrüßt und sehen eine Übersicht aller ihrer Wohnungen.
+                    Die Anzahl neuer Benachrichtigungen werden hier mit einer kleinen Zahl angezeigt.
+                    Landlords haben hier ebenfalls die Möglichkeit, eine neue Wohnung hinzuzufügen.</p>
+        </div>
+        <div class="spacing d-none" data-slider-target="text3">
+          <h3 class="text-black text-center">Schritt 3: Wohnungsshowpage</h3>
+          <p class="text-center paragraph-space">Wenn ein Landlord auf eine Wohnung klickt, werden Details zur Wohnung angezeigt.
+                  Landlords können hier die Wohnungsdetails bearbeiten oder die Wohnung mit einem Tenant teilen.
+                  Tenants können Reports erstellen, wenn ein Gegenstand kaputt ist.
+                  Auf dieser Seite sieht der Landlord alle Gegenstände in der jeweiligen Wohnung und den dazugehörigen Status.
+                  Landlords können abgeschlossene Reparaturen bestätigen und Details zu einem Gegenstand über das Dropdownicon anzeigen.</p>
+        </div>
+        <div class="spacing d-none" data-slider-target="text4">
+          <h3 class="text-black text-center">Schritt 4: Report erstellen</h3>
+          <p class="text-center paragraph-space">Benutzer können den Status eines Gegenstands bearbeiten, indem sie auf einen Gegenstand klicken, die einen guten Zustand haben und dann den Status auf "Kaputt" oder "Muss ersetzt werden" ändern.
+                    Tenants und Landlords können Reports erstellen.</p>
+        </div>
+        <div class="spacing d-none" data-slider-target="text5">
+          <h3 class="text-black text-center">Schritt 5: Showpage Gegenstand</h3>
+          <p class="text-center paragraph-space">Hier können Benutzer die Details eines einzelnen Gegenstands sehen.
+                          Es können Rechnungen und Fotos des Gegenstands hochgeladen werden.
+                          Die Historie der Reports für diesen Gegenstand wird ebenfalls angezeigt.</p>
+        </div>
+    </div>
+    <div class="container mt-5 spacing">
+      <h2 class="mb-4 text-center text-black spacing">Figma Wireframe</h2>
+      <div class="d-flex justify-content-center">
+        <iframe width="500" height="700"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQbRuJfm7Ea7pIpsPBiv0XC%2Fhouselist.io%3Fpage-id%3D14%253A103%26type%3Ddesign%26node-id%3D14-104%26viewport%3D684%252C545%252C0.32%26t%3DA38UvOSO4ZLft7kK-1%26scaling%3Dscale-down%26starting-point-node-id%3D14%253A104%26mode%3Ddesign&hide-ui=1" allowfullscreen></iframe>
+      </div>
+      <%# <h2 class="mb-4 text-center text-black spacing">Details über dieses Projekt</h2>
+      <ul>
+        <li class="text-black">xyzz</li>
+        <li class="text-black">xyzz</li>
+        <li class="text-black">xyzz</li>
+        <li class="text-black">xyzz</li>
+        <li class="text-black">xyzz</li>
+      </ul> %>
+      <h2 class="mb-4 text-center text-black spacing" id="contact-2">Let's code together!</h2>
+      <p class="text-center text-pink">Kontaktiere mich!</p>
+        <div class="d-flex justify-content-center">
+          <a href="https://github.com/Isabeldoc">
+            <%= image_tag ("github.png"), class: "icon-contact"%>
+          </a>
+          <a href="https://www.linkedin.com/in/isabel-dockemeyer-385530195/">
+            <%= image_tag ("linkedin.png"), class: "icon-contact"%>
+          </a>
+        </div>
+    </div>

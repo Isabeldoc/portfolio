@@ -8,7 +8,7 @@
     <div class="intro mt-5">
       <h1 class="">Hi,<br> ich bin Isabel Dockemeyer.</h1>
       <p class="text-hidden text-white mb-3">Frontend Developer</p>
-      <button class="pink">Meine Projekte</button>
+      <a rel="noopener" href="#projects" class="pink no-decoration more-padding">Projekte</a>
     </div>
     <div class="picture-transparent align-self-end">
       <h2 class="big-italic">FRONTEND DEVELOPER</h2>
@@ -36,7 +36,13 @@
           <%= link_to 'Zum Projekt', krenty_path, class: 'pink-small'%>
         </div>
     </div>
-
+    <div class="d-sm-flex justify-content-around">
+        <div class="white-card ">
+          <h2 class="text-logo">Übung - Urban Jungle</h2>
+          <%= image_tag ("urban-jungle.png"), class: "img-big"%>
+          <%= link_to 'Zur Landing Page', "https://isabeldoc.github.io/landing/", class: 'pink-small' %>
+        </div>
+    </div>
     <div class="card-gradient spacing">
       <h2 class="my-5 text-center" id="aboutme">Über mich</h2>
       <p class="mx-5 text-center text-white">Junior Frontend Entwicklerin mit einem Hintergrund im Bereich Medien und Eventmanagement.
